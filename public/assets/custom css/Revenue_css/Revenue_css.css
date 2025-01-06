@@ -1,0 +1,84 @@
+
+
+caption {
+  text-align: left;
+  font-style: italic;
+  padding: 0.25em 0.5em 0.5em 0.5em;
+}
+
+.visually-hidden,
+table table caption {
+  position: absolute;
+  top: auto;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+
+table table th,
+table table td {
+  border: 0.01em solid #ccc;
+}
+
+td[colspan] {
+  padding-left: 0.5em;
+}
+
+th {
+  vertical-align: bottom;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-weight: bold;
+}
+
+table table th {
+  background-color: #757575;
+}
+
+tr:nth-child(odd) {
+  border-bottom: 0.01em solid #ccc;
+}
+
+table table tr {
+  border-bottom: none;
+}
+
+
+/* td button {
+  font-size: 60%;
+  color: #000;
+  background-color: #00f ;
+  padding: 0.3em 0.2em 0 0.2em;
+  border: 0.2em solid #00f;
+  border-radius: 50%;
+  line-height: 1;
+  text-align: center;
+  text-indent: 0;
+  padding: 5px !important;
+} */
+
+button svg {
+  width: 1em;
+  height: 1em;
+  fill: #00f !important;
+  transition: transform 0.25s ease-in;
+  transform-origin: center 45%;
+}
+
+td button:hover,
+td button:focus {
+  background-color: #fff;
+  outline: none;
+}
+
+td button:hover svg,
+td button:focus svg {
+  fill: #00f !important;
+}
+
+button[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
